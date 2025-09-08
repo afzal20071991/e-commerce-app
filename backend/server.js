@@ -48,5 +48,5 @@ app.get("/products", (req, res) => {
 // Server ko port 3000 pe run kiya
 const PORT = 3000;
 app.listen(PORT, () => {
-  console.log(`✅ API running at http://localhost:${PORT}/products`);
+  console.log(`API running at http://localhost:${PORT}/products`);
 });
