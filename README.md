@@ -1,5 +1,3 @@
-https://github.com/afzal20071991/product-listing-app/blob/main/README.md
-
 ## 🛒 Product Listing App
 
 A demo project built with Angular (Frontend) and Node.js + Express (Backend).  
@@ -14,7 +12,7 @@ This app displays a list of random products with name, price, and image.
 
 
 ## 📂 Project Structure
-product-listing-app/
+e-commerce-app/
 
 ├── frontend/ → Angular project (UI)
 
@@ -22,9 +20,9 @@ product-listing-app/
 
 
 ## Clone the Repository
-git clone https://github.com/afzal20071991/product-listing-app.git
+git clone https://github.com/afzal20071991/e-commerce-app.git
 
-cd product-listing-app
+cd e-commerce-app
 
 ## Backend Setup (API)
 cd backend
@@ -52,8 +50,3 @@ Angular app will run at: http://localhost:4200/
 
 ### Backend (API Response)
 ![API Response](.\screenshots\products-api.png)
-
-
-## 👨‍💻 Author
-Afzal Hussain
-Frontend Software Engineer | Angular & TypeScript Specialist
