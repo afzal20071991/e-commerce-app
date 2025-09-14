@@ -14,9 +14,9 @@ This app displays a list of random products with name, price, and image.
 ## 📂 Project Structure
 e-commerce-app/
 
-├── frontend/ → Angular project (UI)
+├── backend/ → Node.js + Express (API)
 
-└── backend/ → Node.js + Express (API)
+└── frontend/ → Angular project (UI)
 
 
 ## Clone the Repository
