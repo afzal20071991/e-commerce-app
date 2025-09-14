@@ -1,12 +1,9 @@
-// Import required libraries
-const express = require("express");  // Express ek lightweight Node.js framework hai jo API banane ke liye use hota hai
-const cors = require("cors");        // cors allow karta hai ki frontend(Angular) backend se data le sake
-
-// Express app initialize karna
+const express = require("express");  // Express ek lightweight Node.js framework hai jo API banane ke liye use kar raha hun
+const cors = require("cors");        // cors allow kar raha hun ki frontend(Angular) backend se data le sake
 const app = express();
-app.use(cors()); // middleware - cors ko enable kar raha hai taki frontend aur backend connect ho sake
+app.use(cors()); // middleware - cors ko enable kar raha hun taki frontend aur backend connect ho sake
 
-// Dummy product data create kiya
+// Dummy product data create kar raha hun
 const productsData = [
   { name: "Wireless Mouse", image: "mouse.png" },
   { name: "Gaming Keyboard", image: "keyboard.png" },
@@ -22,16 +19,15 @@ const productsData = [
 
 // Random product generate karne ka function
 function getRandomProduct(id) {
-  // Math.random() * productsData.length → ek random index pick karega
-  const random = productsData[Math.floor(Math.random() * productsData.length)];
+  const random = productsData[Math.floor(Math.random() * productsData.length)]; // Math.random() * productsData.length ek random index pick karega
   
   // Ek product object return karega with id, name, price, currency, image
   return {
-    id,                                 // Unique product id
-    name: random.name,                  // Randomly selected product ka name
+    id,                                 
+    name: random.name,                  
     price: (Math.random() * 100).toFixed(2), // Price generate karega (0 se 100 ke beech)
-    currency: "USD",                    // Currency fixed rakha USD
-    image: random.image                 // Image filename (sirf naam, path frontend handle karega)
+    currency: "USD",                    
+    image: random.image                 
   };
 }
 
